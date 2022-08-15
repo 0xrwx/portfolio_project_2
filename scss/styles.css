@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap");
+.page {
+  background-color: #010208;
+  color: rgba(227, 228, 230, 0.55);
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.page__wrapper {
+  max-width: 1224px;
+  min-width: 375px;
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav {
+  color: #E3E4E6;
+  width: 199px;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav__items {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 0 3px;
+}
+.main-nav__items--current {
+  background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative; /* important for absolute child to work */
+  padding: 0 0 3px;
+}
+.main-nav__items--current::before {
+  content: ""; /* required to display pseudo elements */
+  height: 2.5px; /* this works like a border-width */
+  width: 9px; /* you can use a percentage of parent or fixed px value */
+  background: #E3E4E6; /* the color of border */
+  position: absolute;
+  bottom: 0; /* position it at the bottom of parent */
+  margin: 0 auto;
+  left: 0;
+  right: 0; /* horizontal centering */
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */

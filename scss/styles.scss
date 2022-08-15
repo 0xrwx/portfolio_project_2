@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+.page {
+  background-color: #010208;
+  color: rgba(227, 228, 230, 0.55);
+  font-family: 'Work Sans';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  &__wrapper {
+    max-width: 1224px;
+    min-width: 375px;
+    margin: 0px auto;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+  }
+
+  &__nav {
+  }
+}
+.logo {
+
+  &__image {
+  }
+}
+.main-nav {
+  color: #E3E4E6;
+  width: 199px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    font-weight: 600;
+    font-size: 14px;
+
+    padding: 0 0 3px;
+  }
+
+  &__items--current {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative; /* important for absolute child to work */
+    padding: 0 0 3px; // for decor nderline
+  }
+  &__items--current::before {
+    content: ''; /* required to display pseudo elements */
+    height: 2.5px; /* this works like a border-width */
+    width: 9px; /* you can use a percentage of parent or fixed px value */
+    background: #E3E4E6; /* the color of border */
+    position: absolute;
+    bottom: 0; /* position it at the bottom of parent */
+    margin: 0 auto; left: 0; right: 0; /* horizontal centering */
+    border-radius: 5px;
+  }
+}
+.welcome {
+
+  &__title {
+  }
+
+  &__down-decoratoin {
+  }
+}
+.main-title {
+}
+.text-decoration {
+}
+.down-decoratoin {
+
+  &__image {
+  }
+}
+.clients {
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.title {
+}
+.lients {
+
+  &__logo {
+  }
+}
+.work {
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.work-card {
+
+  &__image {
+  }
+
+  &__subtitle {
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+}
+.button {
+
+  &__text {
+  }
+
+  &__decoration {
+  }
+
+  &__decoration-current.svg {
+  }
+}
+.button--current {
+}
+.about-me {
+
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__images-block {
+  }
+
+  &__image {
+  }
+}
+.footer {
+
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__social-media {
+  }
+}
+.social-media {
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__image {
+  }
+}
+.dezign-author {
+}
