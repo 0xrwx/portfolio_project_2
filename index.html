@@ -8,19 +8,28 @@
 
   <link rel="stylesheet" href="css/soft-reset.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body class="page">
   <div class="page__wrapper">
     <header class="header" class="page__header">
       <p class="header__logo logo">
-        <img src="images/svg/logo.svg" alt="main logo" class="logo__image" width="96" height="48">
+        <a href="index.html" class="logo__link">
+          <img src="images/svg/logo.svg" alt="main logo" class="logo__image" width="96" height="48">
+        </a>
       </p>
 
       <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__items main-nav__items--current">Home</li>
-          <li class="main-nav__items">Work</li>
-          <li class="main-nav__items">About</li>
+          <li class="main-nav__items main-nav__items--current">
+            <a href="#" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__items">
+            <a href="#" class="main-nav__link">Work</a>
+          </li>
+          <li class="main-nav__items">
+            <a href="#" class="main-nav__link">About</a>
+          </li>
         </ul>
       </nav>
     </header>
