@@ -50,4 +50,24 @@
   left: 0;
   right: 0; /* horizontal centering */
   border-radius: 5px;
+}
+
+.welcome__title {
+  margin-top: 220px;
+}
+.welcome__down-decoratoin {
+  text-align: center;
+  margin-top: 224px;
+}
+
+.main-title {
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+}
+
+.text-decoration {
+  color: #E3E4E6;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */
