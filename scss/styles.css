@@ -7,18 +7,22 @@
   font-weight: 300;
 }
 .page__wrapper {
-  max-width: 1424px;
+  max-width: 1440px;
   min-width: 375px;
   margin: 0px auto;
 }
 
 .header {
-  max-width: 1224px;
+  max-width: 1216px;
   margin-left: 112px;
   margin-right: 112px;
+  height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__logo {
+  margin-top: 5px;
 }
 
 .main-nav {
@@ -42,7 +46,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative; /* important for absolute child to work */
-  padding: 0 0 3px;
+  padding: 0 0 8px;
 }
 .main-nav__items--current::before {
   content: ""; /* required to display pseudo elements */
@@ -58,16 +62,16 @@
 }
 
 .welcome {
-  max-width: 1224px;
+  max-width: 1216px;
   margin-left: 112px;
   margin-right: 112px;
 }
 .welcome__title {
-  margin-top: 220px;
+  margin-top: 221px;
 }
 .welcome__down-decoratoin {
   text-align: center;
-  margin-top: 224px;
+  margin-top: 233px;
 }
 
 .main-title {

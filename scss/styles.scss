@@ -7,19 +7,29 @@
   font-size: 18px;
   font-weight: 300;
   &__wrapper {
-    max-width: 1424px;
+    // border: 1px solid blue;
+
+    max-width: 1440px;
     min-width: 375px;
     margin: 0px auto;
   }
 }
 .header {
-  max-width: 1224px;
+  // border: 1px solid red;
+
+  max-width: 1216px;
   margin-left: 112px;
   margin-right: 112px;
+  
+  height: 96px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__logo {
+    margin-top: 5px;
+  }
 }
 .logo {
 
@@ -49,7 +59,7 @@
     -webkit-text-fill-color: transparent;
 
     position: relative; /* important for absolute child to work */
-    padding: 0 0 3px; // for decor nderline
+    padding: 0 0 8px; // for decor nderline
   }
   &__items--current::before {
     content: ''; /* required to display pseudo elements */
@@ -63,17 +73,17 @@
   }
 }
 .welcome {
-  max-width: 1224px;
+  max-width: 1216px;
   margin-left: 112px;
   margin-right: 112px;
 
   &__title {
-    margin-top: 220px;
+    margin-top: 221px;
   }
 
   &__down-decoratoin {
     text-align: center;
-    margin-top: 224px;
+    margin-top: 233px;
   }
 }
 .main-title {
