@@ -7,16 +7,20 @@
   font-weight: 300;
 }
 .page__wrapper {
-  max-width: 1224px;
+  max-width: 1424px;
   min-width: 375px;
   margin: 0px auto;
 }
 
 .header {
+  max-width: 1224px;
+  margin-left: 112px;
+  margin-right: 112px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .main-nav {
   color: #E3E4E6;
   width: 199px;
@@ -52,6 +56,11 @@
   border-radius: 5px;
 }
 
+.welcome {
+  max-width: 1224px;
+  margin-left: 112px;
+  margin-right: 112px;
+}
 .welcome__title {
   margin-top: 220px;
 }
@@ -73,6 +82,9 @@
 }
 
 .clients {
+  max-width: 1224px;
+  margin-left: 112px;
+  margin-right: 112px;
   padding-top: 80px;
   padding-bottom: 130px;
 }
@@ -84,8 +96,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+  flex-wrap: wrap;
+  gap: 80px;
 }
+
 .work {
+  max-width: 1224px;
+  margin: 0 auto;
   padding-top: 80px;
 }
 .work__title {
@@ -99,6 +116,7 @@
 }
 .work__item {
   margin-bottom: 97px;
+  min-width: 375px;
 }
 
 .work-card {
@@ -107,15 +125,24 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.work-card__image-container {
+  max-width: 594px;
+  min-width: 375px;
+}
 .work-card__image {
   border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
 .work-card__content {
   margin-left: 32px;
-  width: 594px;
+  max-width: 594px;
+  min-width: 375px;
 }
 .work-card__content--reverse {
   order: -1;
+  margin-left: 0px;
+  margin-right: 32px;
 }
 .work-card__subtitle {
   font-weight: 600;
@@ -174,17 +201,18 @@
   border-radius: 100px;
 }
 
-.about-me {
+.about-me__wrapper {
+  max-width: 1246px;
+  margin: 0 auto;
   padding-top: 107px;
   padding-bottom: 107px;
-}
-.about-me__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .about-me__text-block {
-  width: 596px;
+  max-width: 596px;
 }
 .about-me__title {
   font-weight: 600;
@@ -204,10 +232,21 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  width: 49%;
+  max-width: 596px;
+  min-width: 375px;
+}
+.about-me__images-subblock-1 {
+  max-width: 282px;
+  min-width: 170px;
+}
+.about-me__images-subblock-2 {
+  max-width: 282px;
+  min-width: 170px;
 }
 .about-me__image {
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 .about-me__image--last {
   margin-top: 32px;
@@ -244,6 +283,49 @@
   display: flex;
   justify-content: space-between;
 }
+
 .dezign-author {
   text-align: center;
+}
+
+@media screen and (max-width: 1236px) {
+  .work__title {
+    text-align: center;
+  }
+  .work-card__content--reverse {
+    order: 0;
+  }
+  .work-card__subtitle {
+    margin-top: 50px;
+  }
+  .about-me__wrapper {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header,
+.welcome,
+.clients,
+.work,
+.about-me,
+.button {
+    margin: 0 auto;
+  }
+  .header {
+    justify-content: space-around;
+  }
+  .clients__title {
+    text-align: center;
+  }
+  .clients__list {
+    justify-content: center;
+  }
+  .work-card__content {
+    margin: 0px;
+    text-align: center;
+  }
+  .about-me__text-block {
+    text-align: center;
+    margin-bottom: 107px;
+  }
 }/*# sourceMappingURL=styles.css.map */
