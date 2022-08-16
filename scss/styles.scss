@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+.page {
+  background-color: #010208;
+  color: rgba(227, 228, 230, 0.55);
+  font-family: 'Work Sans';
+  font-size: 18px;
+  font-weight: 300;
+  &__wrapper {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0px auto;
+  }
+}
+.header {
+  margin-left: 112px;
+  margin-right: 112px;
+  
+  height: 96px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    margin-top: 5px;
+  }
+}
+.logo {
+
+  &__image {
+  }
+}
+.main-nav {
+  color: #E3E4E6;
+  width: 199px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding: 0 0 3px;
+  }
+
+  &__items--current {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative; /* important for absolute child to work */
+    padding: 0 0 8px; // for decor nderline
+  }
+  &__items--current::before {
+    content: ''; /* required to display pseudo elements */
+    height: 2.5px; /* this works like a border-width */
+    width: 9px; /* you can use a percentage of parent or fixed px value */
+    background: #E3E4E6; /* the color of border */
+    position: absolute;
+    bottom: 0; /* position it at the bottom of parent */
+    margin: 0 auto; left: 0; right: 0; /* horizontal centering */
+    border-radius: 5px;
+  }
+}
+.welcome {
+  max-width: 1216px;
+  margin-left: 112px;
+  margin-right: 112px;
+
+  &__title {
+    margin-top: 221px;
+  }
+
+  &__down-decoratoin {
+    text-align: center;
+    margin-top: 233px;
+  }
+}
+.main-title {
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+}
+.text-decoration {
+  color: #E3E4E6;
+  font-weight: 600;
+}
+.clients {
+  margin-left: 110px;
+  margin-right: 110px;
+
+  padding-top: 115px;
+  padding-bottom: 130px;
+  &__title {
+    font-size: 40px;
+    line-height: 150%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 98px;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+.work {
+  max-width: 1224px;
+  margin: 0 auto;
+
+  padding-top: 87px;
+  &__title {
+    font-size: 40px;
+    line-height: 150%;
+    margin-bottom: 96px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 97px;
+    min-width: 375px;
+  }
+}
+.work-card {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__image-container {
+    max-width: 594px;
+    min-width: 375px;
+    max-height: 490px;
+  }
+
+  &__image {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    margin-left: 32px;
+    max-width: 594px;
+    min-width: 375px;
+  }
+
+  &__content--reverse {
+    order: -1;
+    margin-left: 0px;
+    margin-right: 32px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E3E4E6;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 183px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #E3E4E6;
+
+    margin-bottom: 32px;
+  }
+}
+.button {
+  border: 1px solid rgba(227, 228, 230, 0.55);
+  width: 163px;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #E3E4E6;
+    float: left;
+  }
+
+  &__decoration {
+    margin-left: 8px;
+    clear: both;
+  }
+
+  &__decoration--current {
+    margin-left: 6px;
+    clear: both;
+  }
+}
+.button--current {
+  background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+
+  border: 1px solid #E3E4E6;
+  border-radius: 100px;
+
+  width: 190px;
+  font-weight: 400;
+  padding-left: 28px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
+.about-me {
+  &__wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+
+    padding-top: 129px;
+    padding-bottom: 107px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  &__text-block {
+    max-width: 596px;
+
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #E3E4E6;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+
+    margin-top: 15px;
+  }
+
+  &__images-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px; 
+    max-width: 596px;
+    min-width: 375px;
+  }
+
+  &__images-subblock-1 {
+    max-width: 282px;
+    min-width: 170px;
+  }
+
+  &__images-subblock-2 {
+    max-width: 282px;
+    min-width: 170px;
+  }
+
+  &__image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image--last {
+    margin-top: 32px;
+  }
+}
+.footer {
+  &__wrapper {
+    max-width: 592px;
+    margin: 0 auto;
+
+    padding-top: 70px;
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    margin-top: 6px;
+  }
+
+  &__social-media {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+
+  &__dezign-author {
+    margin-bottom: 40px;
+  }
+}
+.social-media {
+  width: 360px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.dezign-author {
+  text-align: center;
+}
+
+//For right working section "work" and "about-me"
+@media screen and (max-width: 1219px) {
+  .work__title {
+    text-align: center;
+  }
+
+  .work-card {
+    &__content--reverse {
+      order: 0;
+    }
+
+    &__subtitle {
+      margin-top: 50px;
+    }
+  }
+
+  .about-me__wrapper {
+    justify-content: center;
+  }
+}
+
+// For mobile
+@media screen and (max-width: 640px) {
+  .header,
+  .welcome,
+  .clients,
+  .work,
+  .about-me,
+  .button {
+    margin: 0 auto;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .clients {
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      justify-content: center;
+    }
+  }
+
+  .work-card {
+    &__content {
+      margin: 0px;
+      text-align: center;
+    }
+  }
+
+  .about-me {
+    &__text-block {
+      text-align: center;
+      margin-bottom: 107px;
+    }
+  }
+}

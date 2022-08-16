@@ -5,19 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio_project_2</title>
+
+  <link rel="stylesheet" href="css/soft-reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body class="page">
   <div class="page__wrapper">
     <header class="header" class="page__header">
       <p class="header__logo logo">
-        <img src="images/svg/logo.svg" alt="main logo" class="logo__image" width="96" height="48">
+        <a href="index.html" class="logo__link">
+          <img src="images/svg/logo.svg" alt="main logo" class="logo__image" width="96" height="48">
+        </a>
       </p>
 
       <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__items main-nav__items--current">Home</li>
-          <li class="main-nav__items">Work</li>
-          <li class="main-nav__items">About</li>
+          <li class="main-nav__items main-nav__items--current">
+            <a href="#" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__items">
+            <a href="#" class="main-nav__link">Work</a>
+          </li>
+          <li class="main-nav__items">
+            <a href="#" class="main-nav__link">About</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -34,111 +46,167 @@
         </p>
       </section>
       <section class="clients">
-        <h2 class="clients__title title">
-          Some of <span class="text-decoration">the clients I have designed for</span>
+        <h2 class="clients__title">
+          Some of <span class="text-decoration clients__text-decoration">the clients I have <br> designed for</span>
         </h2>
 
         <ul class="clients__list">
           <li class="clients__item">
-            <img src="images/svg/airbnb-logo.svg" alt="" class="lients__logo" width="195" height="61">
+            <a href="#" class="clients__link">
+              <img src="images/svg/airbnb-logo.svg" alt="" class="clients__logo" width="195" height="61">
+            </a>
           </li>
           <li class="clients__item">
-            <img src="images/svg/google-logo.svg" alt="" class="lients__logo" width="182" height="61">
+            <a href="#" class="clients__link">
+              <img src="images/svg/google-logo.svg" alt="" class="clients__logo" width="182" height="61">
+            </a>
           </li>
           <li class="clients__item">
-            <img src="images/svg/microsoft-logo.svg" alt="" class="lients__logo" width="264" height="56">
+            <a href="#" class="clients__link">
+              <img src="images/svg/microsoft-logo.svg" alt="" class="clients__logo" width="264" height="56">
+            </a>
           </li>
           <li class="clients__item">
-            <img src="images/svg/fedEx-logo.svg" alt="" class="lients__logo" width="173" height="52">
+            <a href="#" class="clients__link">
+              <img src="images/svg/fedEx-logo.svg" alt="" class="clients__logo" width="173" height="52">
+            </a>
           </li>
         </ul>
       </section>
       <section class="work">
-        <h2 class="work__title title">
+        <h2 class="work__title">
           Selected <span class="text-decoration">Works</span>
         </h2>
         <ul class="work__list">
           <li class="work__item">
             <div class="work-card">
-              <img src="images/work-card__image-1.jpg" alt="work visualize" class="work-card__image"
-              width="594" height="490">
-              <h4 class="work-card__subtitle">
-                Real estate Template
-              </h4>
-              <h3 class="work-card__title">
-                Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
-                  elit. Ultrices lorem non feugiat egestas amet.</span>
-              </h3>
-              <p class="work-card__description">
-                Website Design
-              </p>
-              <div class="button">
-                <p class="button__text">View work</p>
-                <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
-                width="24" height="24">
+              <div class="work-card__image-container">
+                <a href="#" class="work-card__link">
+                  <img src="images/work-card__image-1.jpg" alt="work visualize" class="work-card__image"
+                  width="594" height="490">
+                </a>
+              </div>
+              <div class="work-card__content">
+                <h4 class="work-card__subtitle">
+                  <a href="#" class="work-card__link">
+                    Real estate Template
+                  </a>
+                </h4>
+                <h3 class="work-card__title">
+                  Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
+                    elit. Ultrices lorem non feugiat egestas amet.</span>
+                </h3>
+                <p class="work-card__description">
+                  <a href="#" class="work-card__link">
+                    Website Design
+                  </a>
+                </p>
+                <div class="button">
+                  <a href="#" class="button__link">
+                    <p class="button__text">View work</p>
+                    <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
+                    width="24" height="24">
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <li class="work__item">
             <div class="work-card">
-              <img src="images/work-card__image-2.jpg" alt="work visualize" class="work-card__image"
-              width="594" height="490">
-              <h4 class="work-card__subtitle">
-                Plant identification app
-              </h4>
-              <h3 class="work-card__title">
-                Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
-                  elit. Ultrices lorem non feugiat egestas amet.</span>
-              </h3>
-              <p class="work-card__description">
-                Mobile App
-              </p>
-              <div class="button button--current">
-                <p class="button__text">View work</p>
-                <img src="images/svg/button__decoration-current.svg" alt="decoration" 
-                class="button__decoration-current.svg" width="24" height="24">
+              <div class="work-card__image-container">
+                <a href="#" class="work-card__link">
+                  <img src="images/work-card__image-2.jpg" alt="work visualize" class="work-card__image"
+                  width="594" height="490">
+                </a>
+              </div>
+              <div class="work-card__content work-card__content--reverse">
+                <h4 class="work-card__subtitle">
+                  <a href="#" class="work-card__link">
+                    Plant identification app
+                  </a>
+                </h4>
+                <h3 class="work-card__title">
+                  Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
+                    elit. Ultrices lorem non feugiat egestas amet.</span>
+                </h3>
+                <p class="work-card__description">
+                  <a href="#" class="work-card__link">
+                    Mobile App
+                  </a>
+                </p>
+                <div class="button button--current">
+                  <a href="#" class="button__link">
+                    <p class="button__text">View work</p>
+                    <img src="images/svg/button__decoration-current.svg" alt="decoration" 
+                    class="button__decoration--current" width="24" height="24">
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <li class="work__item">
             <div class="work-card">
-              <img src="images/work-card__image-3.jpg" alt="work visualize" class="work-card__image"
-              width="594" height="490">
-              <h4 class="work-card__subtitle">
-                Smart Home App
-              </h4>
-              <h3 class="work-card__title">
-                Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
-                  elit. Ultrices lorem non feugiat egestas amet.</span>
-              </h3>
-              <p class="work-card__description">
-                Mobile App
-              </p>
-              <div class="button">
-                <p class="button__text">View work</p>
-                <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
-                width="24" height="24">
+              <div class="work-card__image-container">
+                <a href="#" class="work-card__link">
+                  <img src="images/work-card__image-3.jpg" alt="work visualize" class="work-card__image"
+                  width="594" height="490">
+                </a>
+              </div>
+              <div class="work-card__content">
+                <h4 class="work-card__subtitle">
+                  <a href="#" class="work-card__link">
+                    Smart Home App
+                  </a>
+                </h4>
+                <h3 class="work-card__title">
+                  Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
+                    elit. Ultrices lorem non feugiat egestas amet.</span>
+                </h3>
+                <p class="work-card__description">
+                  <a href="#" class="work-card__link">
+                    Website Design
+                  </a>
+                </p>
+                <div class="button">
+                  <a href="#" class="button__link">
+                    <p class="button__text">View work</p>
+                    <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
+                    width="24" height="24">
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <li class="work__item">
             <div class="work-card">
-              <img src="images/work-card__image-4.jpg" alt="work visualize" class="work-card__image"
-              width="594" height="490">
-              <h4 class="work-card__subtitle">
-                Logo Animation
-              </h4>
-              <h3 class="work-card__title">
-                Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
-                  elit. Ultrices lorem non feugiat egestas amet.</span>
-              </h3>
-              <p class="work-card__description">
-                Animation
-              </p>
-              <div class="button">
-                <p class="button__text">View work</p>
-                <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
-                width="24" height="24">
+              <div class="work-card__image-container">
+                <a href="#" class="work-card__link">
+                  <img src="images/work-card__image-4.jpg" alt="work visualize" class="work-card__image"
+                  width="594" height="490">
+                </a>
+              </div>
+              <div class="work-card__content work-card__content--reverse">
+                <h4 class="work-card__subtitle">
+                  <a href="#" class="work-card__link">
+                    Logo Animation
+                  </a>
+                </h4>
+                <h3 class="work-card__title">
+                  Lorem ipsum dolor sit amet, consectetur <span class="text-decoration">adipiscing 
+                    elit. Ultrices lorem non feugiat egestas amet.</span>
+                </h3>
+                <p class="work-card__description">
+                  <a href="#" class="work-card__link">
+                    Animation
+                  </a>
+                </p>
+                <div class="button">
+                  <a href="#" class="button__link">
+                    <p class="button__text">View work</p>
+                    <img src="images/svg/button__decoration.svg" alt="decoration" class="button__decoration"
+                    width="24" height="24">
+                  </a>
+                </div>
               </div>
             </div>
           </li>
@@ -146,20 +214,26 @@
       </section>
       <section class="about-me">
         <div class="about-me__wrapper">
-          <h2 class="about-me__title">
-            A bit about me
-          </h2>
-          <p class="about-me__description">
-            I am a UI/UX designer who is passionate about creating <span class="text-decoration">beautiful 
-              and joyful digital experiences. Besides design, I love music, games and travelling. </span>
-          </p>
+          <div class="about-me__text-block">
+            <h2 class="about-me__title">
+              A bit about me
+            </h2>
+            <p class="about-me__description">
+              I am a UI/UX designer who is passionate about creating <span class="text-decoration">beautiful 
+                and joyful digital experiences. Besides design, I love music, games and travelling. </span>
+            </p>
+          </div>
           <div class="about-me__images-block">
-            <img src="images/about-me__image-1.jpg" alt="My guitar in audio studio" class="about-me__image"
-            width="282" height="408">
-            <img src="images/about-me__image-2.jpg" alt="Plaing in game" class="about-me__image"
-            width="282" height="374">
-            <img src="images/about-me__image-3.jpg" alt="Travelling" class="about-me__image"
-            width="282" height="375">
+            <div class="about-me__images-subblock-1">
+              <img src="images/about-me__image-1.jpg" alt="My guitar in audio studio" 
+              class="about-me__image" width="282" height="408">
+            </div>
+            <div class="about-me__images-subblock-2">
+              <img src="images/about-me__image-2.jpg" alt="Plaing in game" 
+              class="about-me__image" width="282" height="374">
+              <img src="images/about-me__image-3.jpg" alt="Travelling" 
+              class="about-me__image about-me__image--last" width="282" height="375">
+              </div>
           </div>
         </div>
       </section>
@@ -167,7 +241,7 @@
     <footer>
       <div class="footer__wrapper">
         <h2 class="footer__title">
-          Get in Touch.
+          Get <span class="text-decoration">in Touch.</span>
         </h2>
         <p class="footer__description">
           So that we can talk more about...
@@ -175,24 +249,32 @@
         <div class="footer__social-media social-media">
           <ul class="social-media__list">
             <li class="social-media__item">
-              <img src="images/svg/mail.svg" alt="mail" class="social-media__image" 
-              width="48" height="48">
+              <a href="#" class="social-media__link">
+                <img src="images/svg/mail.svg" alt="mail" class="social-media__image" 
+                width="48" height="48">
+              </a>
             </li>
             <li class="social-media__item">
-              <img src="images/svg/behance.svg" alt="behence" class="social-media__image" 
-              width="48" height="48">
+              <a href="#" class="social-media__link">
+                <img src="images/svg/behance.svg" alt="behence" class="social-media__image" 
+                width="48" height="48">
+              </a>
             </li>
             <li class="social-media__item">
-              <img src="images/svg/dribble.svg" alt="dribble" class="social-media__image" 
-              width="48" height="48">
+              <a href="#" class="social-media__link">
+                <img src="images/svg/dribble.svg" alt="dribble" class="social-media__image" 
+                width="48" height="48">
+              </a>
             </li>
             <li class="social-media__item">
-              <img src="images/svg/linkedIn.svg" alt="linkedIn" class="social-media__image" 
-              width="48" height="48">
+              <a href="#" class="social-media__link">
+                <img src="images/svg/linkedIn.svg" alt="linkedIn" class="social-media__image" 
+                width="48" height="48">
+              </a>
             </li>
           </ul>
         </div>
-        <p class="dezign-author">
+        <p class="dezign-author footer__dezign-author">
           Made with ❣️ by <span class="text-decoration">Srinivas Dezign</span>
         </p>
       </div>
