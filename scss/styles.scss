@@ -212,20 +212,52 @@
   border-radius: 100px;
 }
 .about-me {
-
+  padding-top: 107px;
+  padding-bottom: 107px;
   &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-block {
+    width: 596px;
   }
 
   &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #E3E4E6;
   }
 
   &__description {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
   }
 
   &__images-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px; 
+    width: 49%;
+  }
+
+  &__images-subblock {
+
   }
 
   &__image {
+    border-radius: 20px;
+    
+  }
+
+  &__image--last {
+    margin-top: 32px;
   }
 }
 .footer {
