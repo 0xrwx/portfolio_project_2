@@ -211,4 +211,39 @@
 }
 .about-me__image--last {
   margin-top: 32px;
+}
+
+.footer__wrapper {
+  max-width: 592px;
+  margin: 0 auto;
+}
+.footer__title {
+  font-size: 56px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.footer__description {
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+}
+.footer__social-media {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.footer__dezign-author {
+  margin-bottom: 40px;
+}
+
+.social-media {
+  width: 360px;
+}
+.social-media__list {
+  display: flex;
+  justify-content: space-between;
+}
+.dezign-author {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

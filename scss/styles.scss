@@ -263,20 +263,38 @@
 .footer {
 
   &__wrapper {
+    max-width: 592px;
+    margin: 0 auto;
   }
 
   &__title {
+    font-size: 56px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
   }
 
   &__description {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
   }
 
   &__social-media {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  &__dezign-author {
+    margin-bottom: 40px;
   }
 }
 .social-media {
-
+  width: 360px;
   &__list {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
@@ -286,4 +304,5 @@
   }
 }
 .dezign-author {
+  text-align: center;
 }
