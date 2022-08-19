@@ -3,16 +3,14 @@ const nav_home = document.querySelector('.main-nav__items');
 
 function isOverNavItem() {
   setTimeout(() => {
-    nav_item.forEach(node => node.classList.remove('main-nav__items--current'));
     this.classList.add('main-nav__items--current');
-  }, 200);
+  }, 100);
 }
 
 function isOutNavItem() {
   setTimeout(() => {
     this.classList.remove('main-nav__items--current');
-    nav_home.classList.add('main-nav__items--current');
-  }, 200);
+  }, 100);
 }
 
 nav_item.forEach(node => {
