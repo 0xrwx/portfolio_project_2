@@ -69,3 +69,18 @@ client_image.forEach(node => {
   node.addEventListener('mouseover', isOverClientImage);
   node.addEventListener('mouseout', isOutClientImage);
 });
+
+const button = document.querySelectorAll('.button');
+
+function isOverButton() {
+  
+}
+
+function isOutButton() {
+
+}
+
+button.forEach(node => {
+  node.addEventListener('mouseover', isOverButton);
+  node.addEventListener('mouseout', isOutButton);
+});
