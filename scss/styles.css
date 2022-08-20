@@ -313,6 +313,12 @@
   display: flex;
   justify-content: space-between;
 }
+.social-media__image {
+  opacity: 0.55;
+}
+.social-media__image:hover {
+  opacity: 1;
+}
 
 .dezign-author {
   text-align: center;

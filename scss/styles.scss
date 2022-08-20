@@ -365,7 +365,16 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__image {
+    opacity: 0.55;
+  }
+
+  &__image:hover {
+    opacity: 1;
+  }
 }
+
 .dezign-author {
   text-align: center;
 }
