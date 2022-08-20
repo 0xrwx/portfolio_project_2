@@ -22,7 +22,8 @@ nav_item.forEach(node => {
 const client_image = document.querySelectorAll('.clients__item');
 
 function isOverClientImage() {
-  const image_src = (this.firstElementChild.firstElementChild.src).slice(22);
+  const symbolFormWichStartImageSrc = 44;
+  const image_src = (this.firstElementChild.firstElementChild.src).slice(symbolFormWichStartImageSrc);
   const image = this.firstElementChild.firstElementChild;
 
   switch(image_src) {
@@ -44,7 +45,8 @@ function isOverClientImage() {
 }
 
 function isOutClientImage() {
-  const image_src = (this.firstElementChild.firstElementChild.src).slice(22);
+  const symbolFormWichStartImageSrc = 44;
+  const image_src = (this.firstElementChild.firstElementChild.src).slice(symbolFormWichStartImageSrc);
   const image = this.firstElementChild.firstElementChild;
 
   switch(image_src) {
